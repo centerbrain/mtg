@@ -1,0 +1,416 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="utf-8">
+<div id="massage_box">
+<div class="massage">
+<div class="myheader">
+<div id="checkreturn" style="height:25px;margin:17px 30px 0 23px; text-align: center;display:none;"><span><img style="margin-left:11px; border:0; cursor:pointer" src="mtg_files/jump.gif" onclick="guanbi()"></span></div>
+<div id="abort" onmouseover="this.className=&#39;hover&#39;" onmouseout="this.className=&#39;&#39;" style="position:absolute;width:120px;bottom:50px;right:50px;color:black;height:20px;cursor:hand;"><span onclick="guanbi()">放弃注册 先逛逛&gt;&gt;</span></div>
+<div id="wait" style="position:absolute;width:20px;bottom:61px;left:340px;color:white;height:25px;display:none;">(3)</div>
+<div style="height:1px; overflow:hidden; clear:both;"></div>
+</div>
+</div>
+<div id="fade" class="black_overlay"></div>
+<div id="wp" class="wp">
+<link rel="stylesheet" type="text/css" id="diy_common" href="mtg_files/common.css">
+<link rel="stylesheet" type="text/css" id="diy_common" href="mtg_files/common2.css">
+<link rel="stylesheet" type="text/css" id="diy_common" href="mtg_files/view.css">
+<link rel="stylesheet" type="text/css" id="diy_common" href="mtg_files/deck_comment.css">
+<link rel="stylesheet" type="text/css" id="diy_common" href="mtg_files/deck_vote.css">
+<script src="mtg_files/jquery.js" type="text/javascript"></script>
+<script src="mtg_files/deck_viewer.js" type="text/javascript"></script>
+<div id="bgtrend_mtgdeck">
+<div class="paragraph">
+<table class="bgtrend_mtgdeck_view">
+<tbody><tr>
+<td>
+<table>
+<tbody><tr>
+<td>
+<span>主牌</span>
+<span>60</span>
+<span>张</span>
+</td>
+</tr><tr class="type"><td>地&nbsp;[24张]</td></tr>
+<tr>
+<td>
+<a class="bgtrend_mtgdeck_card">
+<span class="amount">4</span>
+<span class="name">暗峰山崖</span>
+<span class="set">SOM</span>
+<span class="sindex">224</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr><tr>
+<td>
+<a class="bgtrend_mtgdeck_card">
+<span class="amount">4</span>
+<span class="name">新绿陵墓</span>
+<span class="set">ZEN</span>
+<span class="sindex">229</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr><tr>
+<td>
+<a class="bgtrend_mtgdeck_card">
+<span class="amount">3</span>
+<span class="name">血斑泥沼</span>
+<span class="set">KTK</span>
+<span class="sindex">230</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr><tr>
+<td>
+<a class="bgtrend_mtgdeck_card">
+<span class="amount">2</span>
+<span class="name">蔓生墓园</span>
+<span class="set">RTR</span>
+<span class="sindex">243</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr><tr>
+<td>
+<a class="bgtrend_mtgdeck_card">
+<span class="amount">2</span>
+<span class="name">奔腾深谷</span>
+<span class="set">WWK</span>
+<span class="sindex">141</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr><tr>
+<td>
+<a class="bgtrend_mtgdeck_card">
+<span class="amount">2</span>
+<span class="name">沼泽</span>
+<span class="set">DTK</span>
+<span class="sindex">256</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr><tr>
+<td>
+<a class="bgtrend_mtgdeck_card">
+<span class="amount">2</span>
+<span class="name">繁茂丘陵</span>
+<span class="set">KTK</span>
+<span class="sindex">249</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr><tr>
+<td>
+<a class="bgtrend_mtgdeck_card">
+<span class="amount">1</span>
+<span class="name">血腥墓穴</span>
+<span class="set">RTR</span>
+<span class="sindex">238</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr><tr>
+<td>
+<a class="bgtrend_mtgdeck_card">
+<span class="amount">1</span>
+<span class="name">树林</span>
+<span class="set">DTK</span>
+<span class="sindex">262</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr><tr>
+<td>
+<a class="bgtrend_mtgdeck_card">
+<span class="amount">1</span>
+<span class="name">晃动大地</span>
+<span class="set">GTC</span>
+<span class="sindex">247</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr><tr>
+<td>
+<a class="bgtrend_mtgdeck_card">
+<span class="amount">1</span>
+<span class="name">地壳边境</span>
+<span class="set">WWK</span>
+<span class="sindex">145</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr><tr>
+<td>
+<a class="bgtrend_mtgdeck_card">
+<span class="amount">1</span>
+<span class="name">暮色泥沼</span>
+<span class="set">EVE</span>
+<span class="sindex">180</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr><tr class="type"><td>鹏洛客&nbsp;[4张]</td></tr>
+<tr>
+<td>
+<a class="bgtrend_mtgdeck_card" style="background-color: rgba(0, 0, 0, 0);">
+<span class="amount">4</span>
+<span class="name">面纱的莉莲娜</span>
+<span class="set">ISD</span>
+<span class="sindex">105</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr></tbody></table></td>
+<td><table>
+<tbody><tr><td>&nbsp;</td></tr>
+<tr class="type"><td>其它&nbsp;[18张]</td></tr>
+<tr>
+<td>
+<a class="bgtrend_mtgdeck_card" style="background-color: rgba(0, 0, 0, 0);">
+<span class="amount">4</span>
+<span class="name">寇基雷的审讯</span>
+<span class="set">ROE</span>
+<span class="sindex">115</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr><tr>
+<td>
+<a class="bgtrend_mtgdeck_card" style="background-color: rgba(0, 0, 0, 0);">
+<span class="amount">4</span>
+<span class="name">闪电击</span>
+<span class="set">M11</span>
+<span class="sindex">149</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr><tr>
+<td>
+<a class="bgtrend_mtgdeck_card">
+<span class="amount">3</span>
+<span class="name">突发衰败</span>
+<span class="set">RTR</span>
+<span class="sindex">141</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr><tr>
+<td>
+<a class="bgtrend_mtgdeck_card">
+<span class="amount">3</span>
+<span class="name">终结</span>
+<span class="set">ARB</span>
+<span class="sindex">46</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr><tr>
+<td>
+<a class="bgtrend_mtgdeck_card">
+<span class="amount">2</span>
+<span class="name">攫取思绪</span>
+<span class="set">THS</span>
+<span class="sindex">107</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr><tr>
+<td>
+<a class="bgtrend_mtgdeck_card">
+<span class="amount">1</span>
+<span class="name">寇安甘的指命</span>
+<span class="set">DTK</span>
+<span class="sindex">224</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr><tr>
+<td>
+<a class="bgtrend_mtgdeck_card" style="background-color: rgba(0, 0, 0, 0);">
+<span class="amount">1</span>
+<span class="name">涡心鼓动</span>
+<span class="set">ARB</span>
+<span class="sindex">92</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr><tr class="type"><td>生物&nbsp;[14张]</td></tr>
+<tr>
+<td>
+<a class="bgtrend_mtgdeck_card" style="background-color: rgba(0, 0, 0, 0);">
+<span class="amount">4</span>
+<span class="name">黑暗亲信</span>
+<span class="set">RAV</span>
+<span class="sindex">81</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr><tr>
+<td>
+<a class="bgtrend_mtgdeck_card" style="background-color: rgba(0, 0, 0, 0);">
+<span class="amount">4</span>
+<span class="name">塔莫耶夫</span>
+<span class="set">FUT</span>
+<span class="sindex">153</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr><tr>
+<td>
+<a class="bgtrend_mtgdeck_card" style="background-color: rgba(0, 0, 0, 0);">
+<span class="amount">3</span>
+<span class="name">腐食流浆</span>
+<span class="set">M14</span>
+<span class="sindex">195</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr><tr>
+<td>
+<a class="bgtrend_mtgdeck_card" style="background-color: rgba(0, 0, 0, 0);">
+<span class="amount">2</span>
+<span class="name">奥莉薇亚沃达连</span>
+<span class="set">ISD</span>
+<span class="sindex">215</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr><tr>
+<td>
+<a class="bgtrend_mtgdeck_card" style="background-color: rgba(0, 0, 0, 0);">
+<span class="amount">1</span>
+<span class="name">金牙塔西格</span>
+<span class="set">FRF</span>
+<span class="sindex">87</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr></tbody></table>
+</td>
+<td>							
+<table>
+<tbody><tr>
+<td>
+<span>备牌</span>
+<span>15</span>
+<span>张</span>
+</td>
+</tr>
+<tr><td>&nbsp;</td></tr><tr>
+<td>
+<a class="bgtrend_mtgdeck_card">
+<span class="amount">2</span>
+<span class="name">众神之怒</span>
+<span class="set">THS</span>
+<span class="sindex">112</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="bgtrend_mtgdeck_card" style="background-color: rgba(0, 0, 0, 0);">
+<span class="amount">2</span>
+<span class="name">窒息</span>
+<span class="set">8E</span>
+<span class="sindex">237</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="bgtrend_mtgdeck_card" style="background-color: rgba(0, 0, 0, 0);">
+<span class="amount">2</span>
+<span class="name">逼从</span>
+<span class="set">DTK</span>
+<span class="sindex">98</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="bgtrend_mtgdeck_card" style="background-color: rgba(0, 0, 0, 0);">
+<span class="amount">2</span>
+<span class="name">喂饱部落</span>
+<span class="set">KTK</span>
+<span class="sindex">132</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="bgtrend_mtgdeck_card">
+<span class="amount">2</span>
+<span class="name">雷鸣法师</span>
+<span class="set">SHM</span>
+<span class="sindex">188</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="bgtrend_mtgdeck_card">
+<span class="amount">2</span>
+<span class="name">葛加理护符</span>
+<span class="set">RTR</span>
+<span class="sindex">164</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="bgtrend_mtgdeck_card">
+<span class="amount">1</span>
+<span class="name">长年怀恨</span>
+<span class="set">ISD</span>
+<span class="sindex">127</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="bgtrend_mtgdeck_card">
+<span class="amount">1</span>
+<span class="name">颅击槌</span>
+<span class="set">NPH</span>
+<span class="sindex">130</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="bgtrend_mtgdeck_card">
+<span class="amount">1</span>
+<span class="name">叛魂之夜</span>
+<span class="set">CHK</span>
+<span class="sindex">133</span>
+<span class="lang">SC</span>
+</a>
+</td>
+</tr>
+</tbody></table>
+</td>
+<td>
+<div class="bgtrend_mtgdeck_cardviewer" style=""><img src="mtg_files/cardback.gif">
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</style><script src="mtg_files/jquery-1.11.0.min.js"></script><script src="mtg_files/yd1_tip_mfm.js"></script><script src="mtg_files/yd1_tip_tj.js"></script>
+</body></html>

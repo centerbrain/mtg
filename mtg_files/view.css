@@ -1,0 +1,61 @@
+.bgtrend_mtgdeck_cardviewer img	{
+	width:265px;
+	height:370px;
+}
+
+.bgtrend_mtgdeck_card span.set,.bgtrend_mtgdeck_card span.sindex,.bgtrend_mtgdeck_card span.lang	{
+	display:none;
+}
+.bgtrend_mtgdeck_card span.amount	{
+	font-weight:bold;
+}
+.bgtrend_mtgdeck_view table	{
+	border:1px solid #f0f0f0;
+	width:12em;
+	font-size:0.9em;
+}
+.bgtrend_mtgdeck_view table td	{
+	padding-left:1em;
+}
+.bgtrend_mtgdeck_view td	{
+	vertical-align:top;
+}
+.bgtrend_mtgdeck_view tr.type	{
+	height:2em;
+	line-height:2em;
+	color:gray;
+}
+.button div	{
+	margin-left:0.5em;
+	width:8em;
+	height:2em;
+	line-height:2em;
+	text-align:center;
+	border:1px solid gray;
+	background-color:#f0f0f0;
+	float:left;
+	margin-bottom:0.5em;
+	display:block;
+	
+	-webkit-border-radius: 0.3em;
+	-moz-border-radius: 0.3em;
+	border-radius:0.3em;
+}
+.button div:hover	{
+	background-color:white;
+	background-color:transparent;
+}
+.subtitle span.deck_color	{
+	line-height:1.8em;
+	height:1.8em;
+}
+.subtitle span.player	{
+	font-size:0.9em;
+	font-style:italic;
+}
+.subtitle span.deck_color img{
+	margin-bottom:-0.2em;
+	margin-left:-0.4em;
+	width:1.2em;
+	height:1.2em;
+}
