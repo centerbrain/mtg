@@ -15,9 +15,8 @@ JQyd(document).ready(function(){
 		var index	=	JQyd(this).children(".sindex").html();
 		var set		=JQyd(this).children(".set").html();
 		var lang		=JQyd(this).children(".lang").html();
-        var sImgCard    =   "http://bgtrend.com/mtg/image/card/"+lang+"/"+set+"/"+index+".jpg";
-		//var sImgCard    =   "source/plugin/bgtrend_mtgdeck/image/card/"+lang+"/"+set+"/"+index+".jpg";
-		var sImgCard    =   "http://data.iplaymtg.com/mtgdeck/card/"+lang+"/"+set+"/"+index+".jpg";
+		//var sImgCard    =   "http://data.iplaymtg.com/mtgdeck/card/"+lang+"/"+set+"/"+index+".jpg";
+		var sImgCard = 'http://magiccards.info/scans/'+lang+'/'+set+'/'+index+'.jpg'
 		//alert(sImgCard);
         //before 2011.10.19
         //$("div#zoomer>img").attr("src",sImgCard);
